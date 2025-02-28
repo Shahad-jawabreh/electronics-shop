@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Analyzer</title>
+    <link rel="icon" href="./assets/img/motherboard.png">
+    <link rel="stylesheet" href="./assets/css/all.min.css" >
+
+    <link rel="stylesheet" href="./assets/css/chat.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="back-button"  onclick="history.back()">
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        <h1>AI Project Analyzer</h1>
+<p>أدخل فكرة مشروعك ودع الذكاء الاصطناعي يقوم بتحليل مستوى الصعوبة والمكونات المطلوبة.</p>
+    </header>
+
+    <section class="container">
+        <div>
+            <img src="./assets/img/chat.png" alt="chatGPT">
+        </div>
+        <div style="width: 40%;">
+            <textarea id="projectIdea" placeholder="اشرح فكرة مشروعك هنا" style="text-align: end; height: 200px;"></textarea>
+        <button onclick="">تحليل</button>
+        
+        <div id="result" class="hidden">
+            <h2>تحليل المشروع</h2>
+            <p><strong>مستوى الصعوبة:</strong> <span id="difficulty"></span></p>
+            <h3>المكونات المطلوبة:</h3>
+            <ul id="componentsList"></ul>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

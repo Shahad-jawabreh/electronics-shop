@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة قطعة جديدة</title>
+    <link rel="icon" href="./assets/img/motherboard.png">
+    <link rel="stylesheet" href="./assets/css/addproduct.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>إضافة قطعة جديدة</h1>
+        <form id="addItemForm">
+            <label for="name">اسم القطعة:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="price">السعر (₪):</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="quantity">الكمية:</label>
+            <input type="number" id="quantity" name="quantity" required min="1">
+
+            <label>حالة القطعة:</label>
+            <div class="radio-group">
+                <input type="radio" id="new" name="condition" value="جديد" checked>
+                <label for="new">جديد</label>
+
+                <input type="radio" id="used" name="condition" value="مستعمل">
+                <label for="used">مستعمل</label>
+            </div>
+
+            <label for="image">تحميل صورة:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+
+            <button type="submit">➕ إضافة القطعة</button>
+        </form>
+        
+        <button class="back" onclick="history.back()">🔙 العودة</button>
+    </div>
+
+
+
+</body>
+</html>

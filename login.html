@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+<link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="icon" href="./assets/img/motherboard.png">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="form-container">
+            <a href="#" class="back-button"  onclick="history.back()">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <h2>تسجيل الدخول</h2>
+            <form action="login.php" method="POST">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="submit-btn">تسجيل الدخول</button>
+            </form>
+            <p>ليس لديك حساب؟ <a href="signup.html">إنشاء حساب جديد</a></p>
+        </div>
+    </div>
+</body>
+</html>
