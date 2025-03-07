@@ -5,119 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أفكار مشاريع إبداعية</title>
     <link rel="icon" href="./assets/img/motherboard.png">
-
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/idea.css">
 
 </head>
 <body>
 
-    <header>
+    <header class="position-relative text-center p-3 text-white" >
         <a href="#" class="back-button"  onclick="history.back()">
             <i class="fas fa-arrow-right"></i>
         </a>
         <div class="header-container">
-            <h1>أفكار مشاريع إبداعية مع اقتراحات للمكونات المطلوبة</h1>
+            <h1 class="fs-3">أفكار مشاريع إبداعية مع اقتراحات للمكونات المطلوبة</h1>
             <p>استكشف أفكار المشاريع الجديدة إلى جانب قائمة المكونات التي قد تحتاجها لكل مشروع.</p>
         </div>
     </header>
 
     <section>
-        <div class="projects">
+       <div class="container">
+        <div class="row gap-4 projects justify-content-center py-5">
             <!-- Project 1 -->
-            <div class="project-card">
-                <h2>مساعد المنزل الذكي</h2>
-                <p>يتيح لك هذا المشروع التحكم في الأجهزة المنزلية عن بعد باستخدام هاتفك أو الأوامر الصوتية.</p>
-                <h3>اقتراحات للقطع المطلوبة</h3>
-                <div class="components">
-                    <div class="component">
+            <div class="col-lg-4 col-md-6 rounded-2 bg-white p-3 cards">
+                <h2 class="fs-3 fw-bold mb-3 pt-0">مساعد المنزل الذكي</h2>
+                <p class="fs-5 text-secondary">يتيح لك هذا المشروع التحكم في الأجهزة المنزلية عن بعد باستخدام هاتفك أو الأوامر الصوتية.</p>
+                <h3 class="fs-5 pt-3 text-primary-emphasis">اقتراحات للقطع المطلوبة</h3>
+                <div class="container">
+                    <div class="row gap-3">
+                    <div class="col-lg-5 col-md-6  border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/arduino.jpg" alt="Servo Motor">
                         <p>Servo Motor</p>
                     </div>
-                    <div class="component">
+                    <div class="col-lg-5 col-md-6  border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/arduinowithcam.png" alt="ESP32-CAM">
                         <p>ESP32-CAM</p>
                     </div>
-                    <div class="component">
+                    <div class="col-lg-5 col-md-6  border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/lcd.png" alt="LCD Screen">
                         <p>LCD Screen 16×2</p>
                     </div>
-                    <div class="component">
+                    <div class="col-lg-5 col-md-6  border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/ةخفهخى.حىل.jpg" alt="Motion Sensor">
                         <p>Motion Sensor</p>
                     </div>
-                    <div class="component">
+                    <div class="col-lg-5 col-md-6 border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/arduino.jpg" alt="Arduino">
                         <p>Arduino</p>
                     </div>
-                </div>
+                </div></div>
+                
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card">
-                <h2>نظام مراقبة الصحة البشرية</h2>
-                <p>يقوم هذا النظام بمراقبة معايير الصحة البشرية مثل ضغط الدم ومعدل ضربات القلب ومستوى الأكسجين في الدم.</p>
-                <h3>اقتراحات للقطع المطلوبة</h3>
-                <div class="components">
-                    <div class="component">
+            <div class="col-lg-4 col-md-6 rounded-2 bg-white p-3 cards">
+                <h2 class="fs-3 fw-bold mb-3 pt-0">نظام مراقبة الصحة البشرية</h2>
+                <p  class="fs-5 text-secondary">يقوم هذا النظام بمراقبة معايير الصحة البشرية مثل ضغط الدم ومعدل ضربات القلب ومستوى الأكسجين في الدم.</p>
+                <h3 class="fs-5 pt-3 text-primary-emphasis">اقتراحات للقطع المطلوبة</h3>
+                <div class="container"><div class="row gap-3">
+                    <div class="col-lg-5 col-md-6  border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/arduino.jpg" alt="Servo Motor">
                         <p>Servo Motor</p>
                     </div>
-                    <div class="component">
+                    <div class="col-lg-5 col-md-6  border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/a4988.jpg" alt="ESP32-CAM">
                         <p>ESP32-CAM</p>
                     </div>
-                    <div class="component">
+                    <div class="col-lg-5 col-md-6  border border-secondary text-center p-2 rounded-2 ">
                         <img src="./assets/img/driver.jpg" alt="LCD Screen">
                         <p>LCD Screen 16×2</p>
                     </div>
-                </div>
+                </div></div>
             </div>
         </div>
+       </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-row">
-          <div class="footer-col">
-            <h4>معلومات</h4>
-            <ul class="links">
-              <li><a href="#">من نحن</a></li>
-              <li><a href="#">الخدمات</a></li>
-              <li><a href="#">سياسة الشراء</a></li>
-              <li><a href="#">شروط الاستخدام</a></li>
-              <li><a href="#">تواصل معنا</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>استكشف</h4>
-            <ul class="links">
-              <li><a href="#">تحليل المشاريع</a></li>
-              <li><a href="#">مشاريع إلكترونية جاهزة</a></li>
-              <li><a href="#">أحدث القطع</a></li>
-              <li><a href="#">العروض المميزة</a></li>
-              <li><a href="#">دورات تعليمية</a></li>
-              <li><a href="#">رفع منتج للبيع</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>القوانين</h4>
-            <ul class="links">
-              <li><a href="Privacy.html">سياسة الخصوصية</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>تواصل معنا</h4>
-          
-            <div class="icons">
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-github"></i>
-            </div>
-          </div>
+ 
+<footer class="footer text-end w-100 py-3 bg-color overflow-hidden">
+    <div class="row d-flex g-3 p-5 justify-content-between">
+      <div class="col-lg-3 col-md-6">
+        <h4 class="text-white fw-bold fs-5">معلومات</h4>
+        
+        <ul class="links mb-3 ">
+          <li><a href="#">من نحن</a></li>
+          <li><a href="#">الخدمات</a></li>
+          <li><a href="#">سياسة الشراء</a></li>
+          <li><a href="#">شروط الاستخدام</a></li>
+          <li><a href="#">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="text-white fw-bold fs-5">استكشف</h4>
+        <ul class="links mb-3 ">
+          <li><a href="#">تحليل المشاريع</a></li>
+          <li><a href="#">مشاريع إلكترونية جاهزة</a></li>
+          <li><a href="#">أحدث القطع</a></li>
+          <li><a href="#">العروض المميزة</a></li>
+          <li><a href="#">دورات تعليمية</a></li>
+          <li><a href="addproduct.html">رفع منتج للبيع</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="text-white fw-bold fs-5">القوانين</h4>
+        <ul class="links mb-3 ">
+          <li><a href="Privacy.html">سياسة الخصوصية</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="text-white fw-bold fs-5">تواصل معنا</h4>
+      
+        <div class="icons d-flex mt-3 gap-4 justify-content-start">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
         </div>
-        <span>Copyright © 2025 . All Right Reserved</span>
-    </footer>
+      </div>
+    </div>
+    <span class="d-inline-block w-100 text-center">Copyright &#169;	  2025 . All Right Reserved</span>
+</footer>
+
     
 </body>
 </html>

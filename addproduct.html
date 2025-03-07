@@ -5,41 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>إضافة قطعة جديدة</title>
     <link rel="icon" href="./assets/img/motherboard.png">
-    <link rel="stylesheet" href="./assets/css/addproduct.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
 </head>
-<body>
-
-    <div class="container">
-        <h1>إضافة قطعة جديدة</h1>
-        <form id="addItemForm">
-            <label for="name">اسم القطعة:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="price">السعر (₪):</label>
-            <input type="number" id="price" name="price" required>
-
-            <label for="quantity">الكمية:</label>
-            <input type="number" id="quantity" name="quantity" required min="1">
-
-            <label>حالة القطعة:</label>
-            <div class="radio-group">
-                <input type="radio" id="new" name="condition" value="جديد" checked>
-                <label for="new">جديد</label>
-
-                <input type="radio" id="used" name="condition" value="مستعمل">
-                <label for="used">مستعمل</label>
-            </div>
-
-            <label for="image">تحميل صورة:</label>
-            <input type="file" id="image" name="image" accept="image/*">
-
-            <button type="submit">➕ إضافة القطعة</button>
-        </form>
+<style>
+    body {
         
-        <button class="back" onclick="history.back()">🔙 العودة</button>
+    font-family: 'Arial', sans-serif;
+    }
+</style>
+<body class="bg-light" dir="rtl">
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">إضافة قطعة جديدة</h2>
+                    <a href="#" class="btn btn-outline-secondary btn-sm float-start" onclick="history.back()">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <form id="addItemForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">اسم القطعة:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="price" class="form-label">السعر (₪):</label>
+                            <input type="number" id="price" name="price" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">الكمية:</label>
+                            <input type="number" id="quantity" name="quantity" class="form-control" required min="1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">حالة القطعة:</label>
+                            <div class="d-flex gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="new" name="condition" value="جديد" checked>
+                                    <label class="form-check-label" for="new">جديد</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="used" name="condition" value="مستعمل">
+                                    <label class="form-check-label" for="used">مستعمل</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="image" class="form-label">تحميل صورة:</label>
+                            <input type="file" id="image" name="image" class="form-control" accept="image/*">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">➕ إضافة القطعة</button>
+                    </form>
+
+                    <button class="btn btn-secondary w-100 mt-3" onclick="history.back()">🔙 العودة</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-
+</div>
 
 </body>
 </html>
